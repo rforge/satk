@@ -1,0 +1,33 @@
+SATK News
+
+CHANGES IN SATK version 0.8
+
+SIGNIFICANT CHANGES
+
+	* Created SATK package
+
+NEW FEATURES
+
+	* Added this NEWS file
+
+	* Added aloha fit 
+
+	* Added plot methods to amdahl,amdahl_corp,gustafson, & usl. Returns  
+          Neil Gunther's diagnostic info to the plots. This will be the 
+          standard going forward.
+
+        * Added as.sfit_list() method. This method takes sfit objects 
+          as argumentments and builds a sfit_list from them. Each object is 
+          require to be built from the same data, and the method fails if this 
+          is not true.
+
+        * Changed the name of sfit_list to sflist. This is easier to type.
+	  The object itself is still
+
+        * Added as.sflist() method. This method takes sfit objects 
+          as argumentments and builds a sfit_list from them. Each object is 
+          require to be built from the same data, and the method fails if this 
+          is not true.
+
+
+
