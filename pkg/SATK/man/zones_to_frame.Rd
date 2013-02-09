@@ -5,10 +5,15 @@
 \usage{
   zones_to_frame(object, ...)
 
-  \method{zones_to_frame}{} (object, predict_vector = NULL)
+  \method{zones_to_frame}{zones} (object,
+    predict_vector = NULL)
 }
 \arguments{
+  \item{object}{zones objects}
+
   \item{object}{a zones}
+
+  \item{object}{zones object}
 }
 \description{
   Convert zones object to data.frame
