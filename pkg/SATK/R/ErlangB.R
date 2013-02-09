@@ -11,6 +11,7 @@
 #
 #  }
 
+#
 #' @export
 ErlangB <- function(A,P)
   {
