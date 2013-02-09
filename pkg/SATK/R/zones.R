@@ -27,14 +27,17 @@ zones <- function(x,...)
 #'
 #' 
 #' @rdname zones_to_frame
+#' @param object zones objects
 #' @param object a zones
 #' @export zones_to_frame
 
 zones_to_frame <- function(object,...)  UseMethod("zones_to_frame")
 
 #' @rdname zones_to_frame
-#' @method zones_to_frame
+#' @param object zones object
+#' @method zones_to_frame zones
 #' @S3method zones_to_frame zones
+#' 
 zones_to_frame.zones<- function(object,predict_vector=NULL) {
   outframe <- data.frame(N=vector(),X_N=vector(),label=vector())
   predict_frame <- NULL
