@@ -6,7 +6,7 @@ Date: 2013-02-08
 Author: Paul Puglia
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
-License: GPL
+License: GPL-2
 Depends:
     lattice
 Collate:
