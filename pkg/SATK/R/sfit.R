@@ -20,7 +20,7 @@
 #' @param ... additional arguments to pass to function
 #' @return sfit object
 #' @export
-sfit <- function(formula,x,stype=NA,data.cols,start,eff.check=TRUE,...)
+sfit <- function(formula,x,stype=NA,data.cols,start,eff.check=FALSE,...)
   {
 
     if ( ! inherits(formula,"formula") )
@@ -71,10 +71,10 @@ sfit <- function(formula,x,stype=NA,data.cols,start,eff.check=TRUE,...)
 
     }
     
-    buildsfitval(formula,full_measured.df,stype=stype,start=start,...) 
+    buildsfitval(formula,full_measured.df,stype=stype,start=start,eff.check=eff.check,...) 
   }
 
-buildsfitval <- function(formula,x,stype=NA,data.cols,start,eff.check=TRUE,only.phys=TRUE,...) {
+buildsfitval <- function(formula,x,stype=NA,data.cols,start,eff.check=FALSE,only.phys=TRUE,...) {
      measured.df<-transform(x,Norm = x$X_N/x$X_N[1])
     efficiencies <- measured.df$Norm/measured.df$N
 
