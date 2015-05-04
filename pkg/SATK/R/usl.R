@@ -35,11 +35,11 @@ usl <- function(x,start=c(alpha=.1,beta=.01),...)
       return(NULL)
     }
     
-    if ( coef(uslsfit)['beta'] < 0 ) {
-          warning("usl: fit produced unphysical beta coefficient")
-          print(coef(uslsfit))
-          return(NULL)
-    }
+#     if ( coef(uslsfit)['beta'] < 0 ) {
+#           warning("usl: fit produced unphysical beta coefficient")
+#           print(coef(uslsfit))
+#           return(NULL)
+#     }
       
     uslsfit$Nmax <- as.numeric(sqrt((1-coef(uslsfit)['alpha'])/coef(uslsfit)['beta']))
     uslsfit$Xmax <- as.numeric(measured(uslsfit)$X_N[1] *
